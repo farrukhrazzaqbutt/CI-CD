@@ -16,7 +16,8 @@ from rest_framework.response import Response
 @api_view(['GET', 'POST', 'DELETE'])
 @permission_classes([AllowAny])
 def home(request):
-    return Response({"status":"success"}, status=status.HTTP_201_CREATED) 
+    return Response({"status":"success"}, status=status.HTTP_201_CREATED)
+
     # if request.method == 'GET':
     #     return JsonResponse({"status":"success"}, status=status.HTTP_201_CREATED) 
         # return JsonResponse(tutorial_serializer.data, status=status.HTTP_201_CREATED) 
